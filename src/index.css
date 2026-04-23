@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg:           #F6F3EF;
+  --sidebar-bg:   #EFECE7;
+  --surface:      #FDFCFA;
+  --border:       #E2DDD6;
+  --border-faint: #EAE7E2;
+  --ink:          #1D1A17;
+  --ink-2:        #6A6560;
+  --ink-3:        #ABA6A0;
+  --accent:       #3B6E50;
+  --accent-bg:    #E8F0EA;
+  --accent-line:  #3B6E50;
+  --danger:       #B03A2A;
+  --rec:          #C0392B;
+  --rec-bg:       #FAEAE8;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* #root must not lock overflow — each page manages its own */
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection { background: #D3E5D9; }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ink-3); }
