@@ -2,13 +2,15 @@
 
 Notee — privacy-first second brain. Capture everything. Organise nothing.
 
-> Search the way memory works — by association, context, and meaning.
+> "Search the way memory works — by association, context, and meaning."
 
-## Tech stack
+## Stack
 Vite + React + Tailwind CSS
 
-## Getting started
-```
+## Run locally
+```bash
 npm install
 npm run dev
 ```
+
+Landing page at `/`, app at `/app`.
